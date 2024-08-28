@@ -1,0 +1,217 @@
+/* * Layout e programação desenvolvido por GAIA Desenvolvimento Web & UX/UI Design */
+
+
+/* ? Definindo variáveis fixas */
+
+:root {
+    --azul-principal: #004668;
+    --azul-texto: #0B8DFF;
+    --laranja-principal: #F37425;
+    --cinza-fundo: #E4E4E4;
+    --branco-fundo: #ffffff;
+    --fonte-principal: "Cabin Condensed", sans-serif;
+    --fonte-texto: "Montserrat", sans-serif;
+    --preto-principal: #000000;
+
+
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+a:any-link {
+    text-decoration: none;
+}
+
+/* TODO ================ MOBILE / 490 PX ================================ */
+/* TODO ================================================================= */
+
+@media screen and (max-width: 490px){
+    /* ? =============================   HEADER =========================== */
+    /* ? =============================================================================== */
+    .container_header {
+        display: flex;
+        flex-direction: column;
+        background-image: url(./imgs/bg_header_m.svg);
+        background-size:auto;
+        height: 700px;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .container_header img {
+        width: 30vw;
+        margin-top: 3rem;
+    }
+    .header_title_txt{
+        font-family: var(--fonte-principal);
+        color: var(--branco-fundo);
+        font-size: 38px;
+        font-weight: bold;
+        text-align: center;
+        width: 50vw;
+        padding-bottom: 4rem;
+        margin-bottom: 2rem;
+    }
+    .header_title_txt strong {
+        color: var(--azul-texto);
+        font-weight: bolder;
+    }
+
+
+    /* ? =============================   CONTAINER LIMPEZA =========================== */
+    /* ? =============================================================================== */
+    .container_limpeza {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--azul-principal);
+        
+    }
+    
+    .limpeza_title {
+        font-family: var(--fonte-principal);
+        font-size: 28px;
+        color: var(--branco-fundo);
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+
+
+    }
+    .container_limpeza img {
+        width: 90vw;
+    }
+    .limpeza_txt {
+        font-family: var(--fonte-texto);
+        color: var(--branco-fundo);
+        font-size: 20px;
+        width: 90vw;
+        text-align: left;
+        padding-top: 1.5rem;
+    }
+    .limpeza_txt strong {
+        font-weight: bold;
+    }
+    .logo_nrel {
+        max-width: 60vw;
+        margin-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    /* ? =============================   CONTAINER PULVERIZAÇÃO=========================== */
+    /* ? =============================================================================== */
+    .container_pulverizacao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--branco-fundo);
+    }
+    .pulverizacao_title {
+        font-family: var(--fonte-principal);
+        color: var(--azul-principal);
+        font-size: 40px;
+        padding-top: 8rem;
+        padding-bottom: 2rem;
+    }
+    .pulverizacao_txt {
+        font-family: var(--fonte-texto);
+        color: var(--azul-principal);
+        font-size: 20px;
+        width: 90vw;
+        text-align: left;
+        padding-top: 2.5rem;
+        font-weight: 500;
+    }
+    .img_pulv2 {
+        width: 90vw;
+        margin-top: 2rem;
+    }
+    .pulverizacao_vantagens{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        align-items: center;
+        padding-top: 1.5rem;
+    }
+    .vatangem_drone {
+        display: flex;
+        width: 80vw;
+        column-gap: 0.5rem;
+        padding-top: 2rem;
+    }
+    .vatangem_drone p {
+        font-family: var(--fonte-texto);
+        color: var(--azul-principal);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .img_pulv3 {
+        width: 90vw;
+        margin-top: 2rem;
+    }
+
+    /* ? =========================   CONTAINER FILMAGEM PANORAMICA ====================== */
+    /* ? =============================================================================== */
+    .container_filmagem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--branco-fundo);
+    }
+    .filmagem_title {
+        font-family: var(--fonte-principal);
+        color: var(--azul-principal);
+        font-size: 40px;
+        padding-top: 6rem;
+        padding-bottom: 1rem;
+    }
+    .panoramica_txt {
+        font-family: var(--fonte-texto);
+        color: var(--azul-principal);
+        font-size: 20px;
+        width: 90vw;
+        text-align: left;
+        padding-top: 2.5rem;
+        font-weight: 500;
+    }
+    .img_panor2 {
+        width: 90vw;
+        margin-top: 2rem;
+    }
+    .img_panor3 {
+        width: 90vw;
+        margin-top: 2rem;
+    }
+}
+
+/* TODO ======== MOBILE / 491 PX  ATÉ 768PX ============================== */
+/* TODO ================================================================= */
+
+@media only screen and (min-width: 491px) and (max-width: 768px){
+
+}
+
+/* TODO ======== TABLET / 769 PX  ATÉ 1023PX ============================= */
+/* TODO ================================================================= */
+
+@media only screen and (min-width: 769px) and (max-width: 1023px){
+
+}
+
+/* TODO ======== NOTEBOOK / 1024 PX  ATÉ 1200PX ============================ */
+/* TODO ================================================================= */
+@media only screen and (min-width: 1024px) and (max-width: 1200px){
+    
+}
+
+/* TODO ======== PC 1024 PX  ATÉ 1200PX ============================ */
+/* TODO ================================================================= */
+@media only screen and (min-width: 1024px) and (max-width: 1200px){
+    
+}
+
+
+/* TODO ======== DESKTOP / MIN 1201PX  ============================ */
+/* TODO ================================================================= */
+@media screen and (min-width: 1201px){
+
+}
