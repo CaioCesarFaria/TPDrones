@@ -181,6 +181,130 @@ a:any-link {
         width: 90vw;
         margin-top: 2rem;
     }
+
+     /* ? =========================   CONTAINER PORTFOLIO ====================== */
+    /* ? =============================================================================== */
+
+
+    .container_portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio_title {
+        font-family: var(--fonte-principal);
+        color: var(--azul-principal);
+        font-size: 40px;
+        padding-top: 6rem;
+        padding-bottom: 1rem;
+    }
+    .img_port1 {
+        margin-bottom: 2rem;
+    }
+    .box_portfolio {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+
+     /* ? =========================   CONTAINER FACHADAS ====================== */
+    /* ? =============================================================================== */
+    .container_fachadas {
+        background-color: var(--azul-principal);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    .logo_fachadas {
+        padding-top: 3rem;
+        
+    }
+    .fachadas_title {
+        font-family: var(--fonte-principal);
+        color: var(--branco-fundo);
+        font-size: 22px;
+        padding: 1.5rem 3rem;
+        text-align: center;
+    }
+    .box_fachadas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1.5rem;
+    }
+    .box_fachadas img {
+        border: 3px solid var(--branco-fundo);
+        border-radius: 18px;
+    }
+
+    .btn_orcamento {
+        background-color: var(--azul-texto);
+        color: var(--branco-fundo);
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        font-size: 24px;
+        padding: 0.5rem 2rem;
+        border-radius: 16px;
+    }
+
+
+    /* ? =========================   CONTAINER REDES SOCIAIS ====================== */
+    /* ? =============================================================================== */
+    .container_sociais {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(./imgs/bg_footer.svg);
+        background-size: cover;
+        margin: 0;
+
+    }
+    .sociais_title {
+        font-family: var(--fonte-principal);
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--azul-principal);
+        margin-bottom: 2rem;
+    }
+    .sociais_title strong {
+        color: var(--branco-fundo);
+        font-weight: bold;
+    }
+    .logo_footer {
+        width: 50vw;
+        padding-top: 2rem;
+    }
+    a:any-link {
+        text-decoration: none;
+    }
+    .btn_instagram {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #d9d9d9;
+        padding: 0.5rem 1.2rem;
+        border-radius: 16px;
+        column-gap: 0.5rem;
+        color: var(--azul-texto);
+        font-size: 16px;
+        margin-bottom: 2rem;
+
+    }
+    .copyright {
+        background-color: var(--azul-principal);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .copyright a {
+        color: var(--branco-fundo);
+        font-size: 12px;
+        text-align: center;
+        padding: 1rem 0;
+        font-family: var(--fonte-principal);
+    }
 }
 
 /* TODO ======== MOBILE / 491 PX  ATÉ 768PX ============================== */
