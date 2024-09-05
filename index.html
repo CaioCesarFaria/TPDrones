@@ -9,6 +9,7 @@
     <link rel="icon" href="./imgs/logo.svg" />
     <!-- Folhas de estilos -->
     <link rel="stylesheet" href="./styles.css">
+    <script defer src="./script.js"></script>
     <!-- FONTE DO GOOGLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +17,10 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <!-- SWIPPER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- META TAG OG -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="TP Drones" />
@@ -48,7 +52,8 @@
                     limpeza de fachadas</strong> e tecnologia de drones. Estamos sempre atualizados com as
                 <strong>últimas
                     técnicas</strong> e tecnologias
-                do mercado, garantindo um <strong>serviço de excelência</strong> para nossos clientes.</p>
+                do mercado, garantindo um <strong>serviço de excelência</strong> para nossos clientes.
+            </p>
         </div>
 
         <h2 class="limpeza_title">Limpeza de Placas Solares</h2>
@@ -167,12 +172,35 @@
     <div class="container_portfolio">
         <h2 class="portfolio_title">Nossos últimos trabalhos! </h2>
         <img src="./imgs/fotos/portfolio_1.svg" alt="Foto aérea de um campo feita por um drone!" class="img_port1">
-        <div class="box_portfolio">
+        <div class="box_portfolio" id="swiper-wrapper">
             <img src="./imgs/fotos/portfolio_2.svg" alt="Foto aérea de um campo feita por um drone!" class="img_port2">
             <img src="./imgs/fotos/portfolio_3.svg" alt="Foto aérea de um campo feita por um drone!" class="img_port3">
             <img src="./imgs/fotos/portfolio_4.svg" alt="Foto aérea de um campo feita por um drone!" class="img_port4">
         </div>
+    </div>
 
+    <!-- #######################      CARROSSEL         ######################################### -->
+    <!-- Slider main container -->
+    <div class="carrosel_box">
+    <h2 class="carrossel_title">Portfólio Fotográfico</h2>
+    <p class="carrossel_subtitle">Conheça nossos últimos trabalhos!</p>
+    </div>
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <img src="./imgs/fotos/portfolio_7.svg" class="swiper-slide">
+            <img src="./imgs/fotos/portfolio_9.svg" class="swiper-slide">
+            <img src="./imgs/fotos/portfolio_8.svg" class="swiper-slide">
+            <img src="./imgs/fotos/portfolio_5.svg" class="swiper-slide">
+            <img src="./imgs/fotos/portfolio_6.svg" class="swiper-slide">
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
 
     </div>
     <!-- ########################## CONTAINER FACHADAS RESIDENCIAIS E COMERCIAIS ############################################ -->

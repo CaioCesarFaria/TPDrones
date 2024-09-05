@@ -306,6 +306,12 @@ a:any-link {
         padding: 1rem 0;
         font-family: var(--fonte-principal);
     }
+    .swiper {
+        display: none;
+    }
+    .carrosel_box {
+        display: none;
+    }
 }
 
 /* TODO ======== MOBILE / 491 PX  ATÉ 768PX ============================== */
@@ -602,6 +608,12 @@ a:any-link {
     .logo_desktop {
         display: none;
     }
+    .swiper {
+        display: none;
+    }
+    .carrosel_box {
+        display: none;
+    }
 }
 
 /* TODO ======== TABLET / 769 PX  ATÉ 1023PX ============================= */
@@ -891,6 +903,12 @@ a:any-link {
     .logo_desktop {
         display: none;
     }
+    .swiper {
+        display: none;
+    }
+    .carrosel_box {
+        display: none;
+    }
 }
 
 /* TODO ======== NOTEBOOK / 1024 PX  ATÉ 1200PX ============================ */
@@ -1093,28 +1111,48 @@ a:any-link {
 
      /* ? =========================   CONTAINER PORTFOLIO ====================== */
     /* ? =============================================================================== */
-
-
-    .container_portfolio {
+    .carrosel_box {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        width: 100vw;
     }
-    .portfolio_title {
+    .carrossel_title {
         font-family: var(--fonte-principal);
         color: var(--azul-principal);
-        font-size: 40px;
-        padding-top: 6rem;
-        padding-bottom: 1rem;
+        font-size: 52px;
+        margin-top: 2rem;
+        
+        text-align: left;
     }
-    .img_port1 {
-        margin-bottom: 2rem;
+    .carrossel_subtitle {
+        font-family: var(--fonte-principal);
+        color: var(--preto-principal);
+        font-size: 18px;
     }
-    .box_portfolio {
-        display: flex;
-        flex-direction: column;
-        row-gap: 1.5rem;
+
+    .container_portfolio{
+        display: none;
     }
+    .swiper {
+        margin-top: 3rem;
+        width: 60vw;
+        border-radius: 16px;
+    }
+    .swiper-button-prev, .swiper-button-next {
+        background-color: var(--azul-principal);
+        color: var(--branco-fundo);
+        min-width: 60px;
+        min-height: 60px;
+        border-radius: 50px;
+        padding: 0.5rem;
+    }
+    .swiper-button-prev:hover, .swiper-button-next:hover {
+        cursor: grab;
+    }
+    
+    
 
      /* ? =========================   CONTAINER FACHADAS ====================== */
     /* ? =============================================================================== */
@@ -1127,24 +1165,27 @@ a:any-link {
     }
     .logo_fachadas {
         padding-top: 3rem;
+        width: 20vw;
         
     }
     .fachadas_title {
         font-family: var(--fonte-principal);
         color: var(--branco-fundo);
-        font-size: 22px;
+        font-size: 32px;
         padding: 1.5rem 3rem;
         text-align: center;
     }
     .box_fachadas {
         display: flex;
-        flex-direction: column;
+        justify-content: space-evenly;
         align-items: center;
-        row-gap: 1.5rem;
+        
+        width: 100vw;
     }
     .box_fachadas img {
         border: 3px solid var(--branco-fundo);
         border-radius: 18px;
+        width: 20vw;
     }
 
     .btn_orcamento {
@@ -1152,8 +1193,8 @@ a:any-link {
         color: var(--branco-fundo);
         margin-top: 3rem;
         margin-bottom: 3rem;
-        font-size: 24px;
-        padding: 0.5rem 2rem;
+        font-size: 28px;
+        padding: 0.7rem 3rem;
         border-radius: 16px;
     }
 
@@ -1171,7 +1212,7 @@ a:any-link {
     }
     .sociais_title {
         font-family: var(--fonte-principal);
-        font-size: 20px;
+        font-size: 32px;
         font-weight: 700;
         color: var(--azul-principal);
         margin-bottom: 2rem;
@@ -1181,7 +1222,7 @@ a:any-link {
         font-weight: bold;
     }
     .logo_footer {
-        width: 50vw;
+        width: 40vw;
         padding-top: 2rem;
     }
     a:any-link {
@@ -1196,7 +1237,7 @@ a:any-link {
         border-radius: 16px;
         column-gap: 0.5rem;
         color: var(--azul-texto);
-        font-size: 16px;
+        font-size: 22px;
         margin-bottom: 2rem;
 
     }
@@ -1222,5 +1263,345 @@ a:any-link {
 /* TODO ======== DESKTOP / MIN 1201PX  ============================ */
 /* TODO ================================================================= */
 @media screen and (min-width: 1201px){
+    /* ? =============================   HEADER =========================== */
+    /* ? =============================================================================== */
+    .container_header {
+        display: flex;
+        flex-direction: column;
+        background-image: url(./imgs/bg_header.svg);
+        background-size:auto;
+        height: 700px;
+        justify-content: space-between;
+        align-items:last baseline;
+        width: 100%;
+    }
+    .logo_mobile {
+        display: none;
+    }
+    .logo_desktop {
+        width: 40vw;
+        padding-top: 2rem;
+        padding-left: 7rem;
+    }
+    .header_title_txt{
+        font-family: var(--fonte-principal);
+        color: var(--branco-fundo);
+        font-size: 44px;
+        font-weight: bold;
+        text-align: right;
+        width: 50vw;
+        padding-bottom: 4rem;
+        margin-bottom: 8rem;
+        padding-right: 6rem;
+    }
+    .header_title_txt strong {
+        color: var(--azul-texto);
+        font-weight: bolder;
+    }
 
+
+    /* ? =============================   CONTAINER LIMPEZA =========================== */
+    /* ? =============================================================================== */
+    .container_limpeza {
+        display: flex;
+        flex-direction: column;
+        align-items:baseline;
+        background-color: var(--azul-principal);
+        row-gap: 3rem;
+        
+    }
+    
+    .limpeza_title {
+        font-family: var(--fonte-principal);
+        font-size: 38px;
+        color: var(--branco-fundo);
+        padding-bottom: 1.5rem;
+        padding-top: 2.5rem;
+        margin: 0 auto;
+
+
+    }
+    .caixa_limpeza img {
+        width: 50vw;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        
+    }
+    .caixa_limpeza {
+        display: flex;
+        column-gap: 2rem;
+        justify-content: space-between;
+        
+    }
+
+    .limpeza_txt {
+        font-family: var(--fonte-texto);
+        color: var(--branco-fundo);
+        font-size: 32px;
+        width: 40vw;
+        text-align: left;
+        padding-top: 1.5rem;
+    }
+    .limpeza_txt strong {
+        font-weight: bold;
+    }
+    .logo_nrel {
+        max-width: 50vw;
+        margin-top: 3rem;
+        padding-bottom: 3rem;
+        padding-top: 3rem;
+        margin: 0 auto;
+    }
+    /* ? =============================   CONTAINER PULVERIZAÇÃO=========================== */
+    /* ? =============================================================================== */
+    .container_pulverizacao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--branco-fundo);
+    }
+    .pulverizacao_title {
+        font-family: var(--fonte-principal);
+        color: var(--azul-principal);
+        font-size: 52px;
+        padding-top: 8rem;
+        padding-bottom: 2rem;
+        text-align: left;
+    }
+    .pulverizacao_txt {
+        font-family: var(--fonte-texto);
+        color: var(--azul-principal);
+        font-size: 20px;
+        width: 90vw;
+        text-align: left;
+        padding-top: 2.5rem;
+        font-weight: 500;
+        display: none;
+    }
+    .img_pulv1 {
+        width: 100vw;
+    }
+    .img_pulv2 {
+        display: none;
+    }
+    .pulverizacao_vantagens{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        background-color: var(--azul-principal);
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        margin-top: -20px;
+        
+    }
+    .vatangem_drone {
+        display: flex;
+        width: 40vw;
+        column-gap: 0.5rem;
+        padding-top: 2rem;
+
+    }
+    .vatangem_drone p {
+        font-family: var(--fonte-texto);
+        color: var(--branco-fundo);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .img_pulv3 {
+        width: 90vw;
+        margin-top: 2rem;
+        display: none;
+    }
+
+    /* ? =========================   CONTAINER FILMAGEM PANORAMICA ====================== */
+    /* ? =============================================================================== */
+    .container_filmagem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--branco-fundo);
+    }
+    .filmagem_title {
+        font-family: var(--fonte-principal);
+        color: var(--azul-principal);
+        font-size: 52px;
+        padding-top: 8rem;
+        padding-bottom: 2rem;
+        text-align: left;
+    }
+    .panoramica_txt {
+        font-family: var(--fonte-texto);
+        color: var(--azul-principal);
+        font-size: 20px;
+        width: 90vw;
+        text-align: left;
+        padding-top: 2.5rem;
+        font-weight: 500;
+        display: none;
+    }
+    .img_panor1 {
+        width: 100vw;
+    }
+    .img_panor2 {
+        width: 90vw;
+        margin-top: 2rem;
+        display: none;
+
+    }
+    .img_panor3 {
+        width: 90vw;
+        margin-top: 2rem;
+        display: none;
+    }
+
+     /* ? =========================   CONTAINER PORTFOLIO ====================== */
+    /* ? =============================================================================== */
+    .carrosel_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+    }
+    .carrossel_title {
+        font-family: var(--fonte-principal);
+        color: var(--azul-principal);
+        font-size: 52px;
+        margin-top: 2rem;
+        
+        text-align: left;
+    }
+    .carrossel_subtitle {
+        font-family: var(--fonte-principal);
+        color: var(--preto-principal);
+        font-size: 18px;
+    }
+
+    .container_portfolio{
+        display: none;
+    }
+    .swiper {
+        margin-top: 3rem;
+        width: 60vw;
+        border-radius: 16px;
+    }
+    .swiper-button-prev, .swiper-button-next {
+        background-color: var(--azul-principal);
+        color: var(--branco-fundo);
+        min-width: 60px;
+        min-height: 60px;
+        border-radius: 50px;
+        padding: 0.5rem;
+    }
+    .swiper-button-prev:hover, .swiper-button-next:hover {
+        cursor: grab;
+    }
+    
+    
+
+     /* ? =========================   CONTAINER FACHADAS ====================== */
+    /* ? =============================================================================== */
+    .container_fachadas {
+        background-color: var(--azul-principal);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    .logo_fachadas {
+        padding-top: 3rem;
+        width: 20vw;
+        
+    }
+    .fachadas_title {
+        font-family: var(--fonte-principal);
+        color: var(--branco-fundo);
+        font-size: 32px;
+        padding: 1.5rem 3rem;
+        text-align: center;
+    }
+    .box_fachadas {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+        width: 100vw;
+    }
+    .box_fachadas img {
+        border: 3px solid var(--branco-fundo);
+        border-radius: 18px;
+        width: 20vw;
+    }
+
+    .btn_orcamento {
+        background-color: var(--azul-texto);
+        color: var(--branco-fundo);
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        font-size: 28px;
+        padding: 0.7rem 3rem;
+        border-radius: 16px;
+    }
+
+
+    /* ? =========================   CONTAINER REDES SOCIAIS ====================== */
+    /* ? =============================================================================== */
+    .container_sociais {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(./imgs/bg_footer.svg);
+        background-size: cover;
+        margin: 0;
+
+    }
+    .sociais_title {
+        font-family: var(--fonte-principal);
+        font-size: 32px;
+        font-weight: 700;
+        color: var(--azul-principal);
+        margin-bottom: 2rem;
+    }
+    .sociais_title strong {
+        color: var(--branco-fundo);
+        font-weight: bold;
+    }
+    .logo_footer {
+        width: 40vw;
+        padding-top: 2rem;
+    }
+    a:any-link {
+        text-decoration: none;
+    }
+    .btn_instagram {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #d9d9d9;
+        padding: 0.5rem 1.2rem;
+        border-radius: 16px;
+        column-gap: 0.5rem;
+        color: var(--azul-texto);
+        font-size: 22px;
+        margin-bottom: 2rem;
+
+    }
+    .copyright {
+        background-color: var(--azul-principal);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .copyright a {
+        color: var(--branco-fundo);
+        font-size: 12px;
+        text-align: center;
+        padding: 1rem 0;
+        font-family: var(--fonte-principal);
+    }
 }
